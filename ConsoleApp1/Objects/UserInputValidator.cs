@@ -21,7 +21,7 @@ public class UserInputValidator
             }
         }
 
-        if (objectToValidate is string && objectToValidate == "/q")
+        if (objectToValidate is string && (string)objectToValidate == "/q")
         {
             isRunning = false;
         }

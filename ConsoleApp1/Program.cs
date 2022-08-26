@@ -18,7 +18,7 @@ public class Program
             System.Console.WriteLine($"{startMessage}\n\n{exitHint}");
             
             string? name = System.Console.ReadLine();
-            if (UserInputValidator.Validate(name, ref isRunning))
+            if (UserInputValidator.Validate(name, ref isRunning) && isRunning)
             {
                 Dog YourDog = new Dog(name); 
                 System.Console.WriteLine($"{YourDog.Name} is extremely happy and says {YourDog.MakeSound()}");
